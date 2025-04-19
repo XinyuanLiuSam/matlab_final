@@ -1,12 +1,36 @@
-function [outputArg1,outputArg2] = main(inputArg1,inputArg2)
-%MAIN Summary of this function goes here
-%   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
-    rawDatasets=loadData();
-    preparedElements=preprocessData(rawDataset);
-    userInputs=getInput();
-    queryResults=queryElements(preparedElements,userInputs);
-    finalResult=displayElements(queryResults);
-    gamingResult=gamingElements(preparedElements);
+%% ================== Author Copywrites ===================
+% Author    : Xinyuan Liu
+% ID        : a1981985
+% Email     : xinyuan.liu@student.adelaide.edu.au
+% Date      : 18/04/2025 
+%% ========= Periodic Table Application Main ==============
+% ================================== =====================
+function main
+% MAIN function of periodic Table Application
+% prepareElements=loadElements();
+    while true
+        fprintf("===========================\n");
+        fprintf("Periodic Table Application Main \n");
+        fprintf("===========================\n");
+        fprintf("1. Element Query            \n");
+        fprintf("2.Element Game               \n");
+        fprintf("q. Quit\n                     \n");
+        fprintf("===============================\n");
+        mainChoice=input('Please enter your choice (1/2/q):','s');
+        switch mainChoice
+            case'1'
+                disp("do element query module");
+                  % getQuerychoice();enter the query module;
+                  queryElements()
+            case'2'
+                disp("do element gaming module");
+            case'q'
+                disp("Exit periodic Table Application.");
+                fprintf('\nGoodbye!\n');
+                break;           %enter exit main module;
+            otherwise
+                fprintf("Invalid input.please try again.\n");
+        end
+    end
 end
+  

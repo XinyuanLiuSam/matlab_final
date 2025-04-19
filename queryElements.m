@@ -1,7 +1,48 @@
-function [outputArg1,outputArg2] = queryElements(inputArg1,inputArg2)
-%QUERYELEMENTS Summary of this function goes here
-%   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
+%% ================== Author Copywrites ===================
+% Author    : Xinyuan Liu
+% ID        : a1981985
+% Email     : xinyuan.liu@student.adelaide.edu.au
+% Date      : 18/04/2025 
+%% ========= Periodic Table Application queryElements ==============
+% ================================== =====================
+function queryChoice=queryElements()
+%   Get user's query from user input;
+clc;
+fprintf('===============================\n');
+fprintf('Periodic Table Element Query Choice  \n');
+fprintf('==============================\n');
+fprintf('1.Query by element number      \n ');
+fprintf('2. Query by element name        \n' );
+fprintf('3.Query by element symbol          \n');
+fprintf('4.Query by atomic_mass              \n');
+fprintf('5.Query by element group             \n');
+fprintf('q.Quit and return to main             \n ');
+fprintf('---------------------------------------\n');
+
+    while true
+    queryChoice=input('Please enter query choice(1/2/3/4/5/q): ','s');
+        switch queryChoice
+            case"1"
+                disp("do query by element number");
+            case"2"
+                dip("do query by element name .");
+            case"3"
+                disp ("do query by element symbol.");
+            case"4"
+                disp ("do query by amotic _mass.");
+            case"5"
+                disp("do query by element group");
+            case"q"
+                disp("quit and return to main().");
+                break
+            otherwise
+                fprintf('Invalid input, please try again.\n');
+        end
+    end
 end
+        
+    
+
+
+           
 
