@@ -7,7 +7,7 @@
 % ================================== =====================
 function main
 % MAIN function of periodic Table Application
-% prepareElements=loadElements();
+    preparedElements=loadElements();
     while true
         fprintf("===========================\n");
         fprintf("Periodic Table Application Main \n");
@@ -21,7 +21,7 @@ function main
             case'1'
                 disp("do element query module");
                   % getQuerychoice();enter the query module;
-                  queryElements()
+                  queryElements(preparedElements);
             case'2'
                 disp("do element gaming module");
             case'q'

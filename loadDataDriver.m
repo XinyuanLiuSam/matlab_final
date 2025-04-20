@@ -6,7 +6,7 @@ close all;
 pathRawData="./raw_data/PeriodicTableCSV.csv";
 rawDatasets = loadData(pathRawData);
 disp(rawDatasets);
-name="Fe";
+name="Ca";
 results=[];
 for i=1:length(rawDatasets)
     if contains(rawDatasets(i).name,name,"IgnoreCase",false)
