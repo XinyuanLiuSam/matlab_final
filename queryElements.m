@@ -29,8 +29,12 @@ clc;
                 result=queryByNumber(elements,elementNumber);
             case"2"
                 dip("do query by element name .");
+                elementName=input("please enter an element name:","s");
+                result = queryByName(elements,elementName);
             case"3"
                 disp ("do query by element symbol.");
+                elementSymbol=input("please enter a Symbol","s");
+                result=queryBySymbol(elements,elementSymbol);
             case"4"
                 disp ("do query by amotic _mass.");
             case"5"
