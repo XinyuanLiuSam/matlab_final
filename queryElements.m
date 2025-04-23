@@ -45,7 +45,7 @@ clc;
             otherwise
                 fprintf('Invalid input, please try again.\n');
         end
-        disp(result);
+        displaySingleElement(result);
     end
 end
         

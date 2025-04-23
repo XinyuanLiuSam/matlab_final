@@ -13,7 +13,7 @@ function main
         fprintf("Periodic Table Application Main \n");
         fprintf("===========================\n");
         fprintf("1. Element Query            \n");
-        fprintf("2.Element Game               \n");
+        fprintf("2. Element Game               \n");
         fprintf("q. Quit\n                     \n");
         fprintf("===============================\n");
         mainChoice=input('Please enter your choice (1/2/q):','s');

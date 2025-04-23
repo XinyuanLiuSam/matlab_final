@@ -9,5 +9,6 @@ clear; % Remove all variables from the workspace
 close all; % Close all figure windows
 %% ========================================================
 % call the main function of the Periodic Table Appplication 
-queryElements();
+preparedElements=loadElements();
+queryElements(preparedElements);
 %% ========================================================
