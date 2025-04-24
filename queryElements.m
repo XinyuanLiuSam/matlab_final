@@ -17,7 +17,7 @@ clc;
         fprintf('2.Query by element name        \n' );
         fprintf('3.Query by element symbol          \n');
         fprintf('4.Query by atomic_mass              \n');
-        fprintf('5.Query by element group             \n');
+        fprintf('5.Query by element period             \n');
         fprintf('q.Quit and return to main             \n ');
         fprintf('---------------------------------------\n');
     
@@ -33,19 +33,27 @@ clc;
                 result = queryByName(elements,elementName);
             case"3"
                 disp ("do query by element symbol.");
-                elementSymbol=input("please enter a Symbol","s");
+                elementSymbol=input("please enter a Symbol:","s");
                 result=queryBySymbol(elements,elementSymbol);
             case"4"
-                disp ("do query by amotic _mass.");
+                disp ("do query by atomic _mass.");
+                atomic_mass=input("please enter an atomic_mass:");
+                result=queryByatomic_mass(elements,atomic_mass );
             case"5"
-                disp("do query by element group");
+                disp("do query by element period");
+                period=input("please enter a period for elements:");
+                result=queryByPeriod(elements,period);
             case"q"
                 disp("quit and return to main().");
                 break
             otherwise
                 fprintf('Invalid input, please try again.\n');
-        end
-        displaySingleElement(result);
+        end 
+        % display single element.
+        % displaySingleElement(result);
+        % display multiple elements.
+        displayMultipleElements(result);
+        
     end
 end
         
