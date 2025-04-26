@@ -24,6 +24,8 @@ function main
                   queryElements(preparedElements);
             case'2'
                 disp("do element gaming module");
+                % getQuerychoice();enter the query module;
+                  gamingElements(preparedElements);
             case'q'
                 disp("Exit periodic Table Application.");
                 fprintf('\nGoodbye!\n');

@@ -1,4 +1,4 @@
-function guessElement(elems)
+function guessElementSymbol(elems)
 % guess the element number according to the given element symbol by user
 % and display the whole information of it.
 % 
