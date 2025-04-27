@@ -11,6 +11,6 @@ close all; % Close all figure windows
 % call the main function of the Periodic Table Appplication 
 preparedElements=loadElements();
 atomic_mass=1.0080;
-result=queryByatomic_mass(preparedElements,atomic_mass);
+result=queryByAtomicMass(preparedElements,atomic_mass);
 disp(result);
 %% =======================================================

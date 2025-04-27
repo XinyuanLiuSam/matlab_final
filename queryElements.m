@@ -16,7 +16,7 @@ clc;
         fprintf('1.Query by element number      \n ');
         fprintf('2.Query by element name        \n' );
         fprintf('3.Query by element symbol          \n');
-        fprintf('4.Query by atomic_mass              \n');
+        fprintf('4.Query by atomic mass              \n');
         fprintf('5.Query by element period             \n');
         fprintf('q.Quit and return to main             \n ');
         fprintf('---------------------------------------\n');
@@ -36,9 +36,9 @@ clc;
                 elementSymbol=input("please enter a Symbol:","s");
                 result=queryBySymbol(elements,elementSymbol);
             case"4"
-                disp ("do query by atomic _mass.");
-                atomic_mass=input("please enter an atomic_mass:");
-                result=queryByatomic_mass(elements,atomic_mass );
+                disp ("do query by atomic mass.");
+                mass=input("please enter an atomic mass:");
+                result=queryByAtomicMass(elements,mass );
             case"5"
                 disp("do query by element period");
                 period=input("please enter a period for elements:");
