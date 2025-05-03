@@ -6,7 +6,7 @@ function rawDatasets = loadData(pathRawData)
     
     % load raw data from given .csv data file of Periodic Table;
     T=readtable(pathRawData);
-    % convert the loaded raw data into struct array;
+    % convert the loaded raw data table into struct array;
     rawDatasets=table2struct(T);
 end
 

@@ -7,6 +7,8 @@
 % ================================== =====================
 function main
 % MAIN function of periodic Table Application
+    % load all the data of the elements in Preodic Table in order
+    % to make preparation for the following functions.
     preparedElements=loadElements();
     while true
         fprintf("===========================\n");
@@ -24,7 +26,7 @@ function main
                   queryElements(preparedElements);
             case'2'
                 disp("do element gaming module");
-                % getQuerychoice();enter the query module;
+                % gamingElements();enter the gaming module;
                   gamingElements(preparedElements);
             case'q'
                 disp("Exit periodic Table Application.");

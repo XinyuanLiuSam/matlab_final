@@ -26,7 +26,7 @@ function preparedElements = loadElements( )
             if elemName == ""
                 elemName = "--"; % "----" as the empty space.
             end
-            rowText = rowText + sprintf("%-4s", elemName); % each element have 16
+            rowText = rowText + sprintf("%-4s", elemName); % each element have 4
         end
         disp(rowText)
     end

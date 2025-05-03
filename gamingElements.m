@@ -16,17 +16,17 @@ function queryChoice = gamingElements(preparedElements)
         fprintf('========================================\n');
         fprintf(' Periodic Table Element Gaming Choice   \n');
         fprintf('========================================\n');
-        fprintf(' 1. Gaming by element symbol            \n');
-        fprintf(' 2. Gaming by element period            \n');
+        fprintf(' 1. Gaming by guessing element symbol            \n');
+        fprintf(' 2. Gaming by guessing element period            \n');
         fprintf(' q. Quit and return to main             \n');
         fprintf('----------------------------------------\n');
         queryChoice = input('Please enter query choice (1/2/q): ', 's');
         switch queryChoice
             case "1"
-                disp("do gussing game of element symbol.");
+                disp(" gussing game of element symbol.");
                 guessElementSymbol(preparedElements);
             case "2"
-                disp("do guessing game of element period.");
+                disp(" guessing game of element period.");
                 guessElementPeriod(preparedElements);
             case "q"
                 disp("quit and return to main().");

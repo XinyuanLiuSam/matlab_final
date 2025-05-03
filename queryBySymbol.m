@@ -3,11 +3,12 @@
 % ID        : a1981985
 % Email     : xinyuan.liu@student.adelaide.edu.au
 % Date      : 21/04/2025 
-%% ========= Periodic Table Application queryByName ==============
+%% ========= Periodic Table Application queryBySymbol ==============
 % ================================== =====================
 function foundResult = queryBySymbol(elements,elementSymbol)
-    %QUERYBYNUMBER Summary of this function goes here
-    %   Detailed explanation goes here
+    %QUERYBYSYMBOL Summary of this function goes here
+    % for loop to compare the symbol of each element with 
+    % elementSymbol from the user input
     foundResult=[];
     for i=1:length(elements)
         if contains(elements(i).symbol,elementSymbol,"IgnoreCase",false) 
